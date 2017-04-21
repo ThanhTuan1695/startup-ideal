@@ -29,7 +29,7 @@ public class ConnectDB {
 		return conn;
 	}
 	public static void main(String[] args) {
-//		ConnectDB db = new ConnectDB();
-//		System.out.println(db.getConnectmysql());
+		ConnectDB db = new ConnectDB();
+		System.out.println(db.getConnectmysql());
 	}
 }
