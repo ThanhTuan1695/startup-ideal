@@ -1,25 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quản lí</title>
-
-<link href="<%=request.getContextPath() %>/template/admin/css/bootstrap.min.css" rel="stylesheet">
-<link href="<%=request.getContextPath() %>/template/admin/css/datepicker3.css" rel="stylesheet">
-<link href="<%=request.getContextPath() %>/template/admin/css/styles.css" rel="stylesheet">
-
-<!--Icons-->
-<script src="<%=request.getContextPath() %>/template/admin/js/lumino.glyphs.js"></script>
-
-</head>
-
+<%@ include file ="/template/admin/inc/header.jsp" %>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<p class="navbar-brand">Quản lí danh mục</p>
+				<p class="navbar-brand">Admin</p>
 			</div>							
 		</div><!-- /.container-fluid -->
 	</nav>
@@ -29,7 +14,6 @@
 			<li><a href="admin_ql_baidang.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Quản lí bài đăng</a></li>
 			<li><a href="admin_ql_danhmuc.html"><svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper"/></svg> Quản lí danh mục</a></li>
 			<li><a href="admin_ql_nguoidung.html"><svg class="glyph stroked male user "><use xlink:href="#stroked-male-user"/></svg> Quản lí người dùng</a></li>
-			<li><a href="admin_ql_lienhe.html"><svg class="glyph stroked two messages"><use xlink:href="#stroked-two-messages"/></svg> Quản lí liên hệ</a></li>
 			<li><a href="admin_thongke.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Thống kê</a></li>
 		</ul>
 	</div><!--/.sidebar-->
@@ -39,8 +23,3 @@
 			<img src="<%=request.getContextPath() %>/template/admin/images/logo.png" width="217px" height="55px"/>
 			<a href="index.html" class="logout">Đăng xuất</a>		
 		</div>
-		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header" align="center">SE11</h1>
-			</div>
-		</div><!--/.row-->

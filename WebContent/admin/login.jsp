@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file ="/template/admin/inc/header.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login</title>
-
 	<link href="<%=request.getContextPath() %>/template/admin/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<%=request.getContextPath() %>/template/admin/css/datepicker3.css" rel="stylesheet">
 	<link href="<%=request.getContextPath() %>/template/admin/css/styles.css" rel="stylesheet">
@@ -40,29 +40,4 @@
 				</div>
 			</div>
 		</div><!-- /.col-->
-	</div><!-- /.row -->	
-	
-	<script src="<%=request.getContextPath() %>/template/admin/js/jquery-1.11.1.min.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/bootstrap.min.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/chart.min.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/chart-data.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/easypiechart.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/easypiechart-data.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/bootstrap-datepicker.js"></script>
-	<script>
-		!function ($) {
-			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
-				$(this).find('em:first').toggleClass("glyphicon-minus");	  
-			}); 
-			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
-		}(window.jQuery);
-
-		$(window).on('resize', function () {
-		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-		})
-		$(window).on('resize', function () {
-		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-		})
-	</script>	
-</body>
-</html>
+<%@ include file ="/template/admin/inc/footer.jsp" %>
