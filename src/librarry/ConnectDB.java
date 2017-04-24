@@ -12,7 +12,7 @@ public class ConnectDB {
 	private String db;
 	
 	public ConnectDB(){
-		this.db = "tintuc";
+		this.db = "startup";
 		this.url = "jdbc:mysql://localhost:3306/" + db + "?useUnicode=true&characterEncoding=UTF-8";
 		this.user = "root";
 		this.pass = "";

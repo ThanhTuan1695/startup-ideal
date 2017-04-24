@@ -1,12 +1,4 @@
 </div><!--/.main-->
-		<script src="<%=request.getContextPath() %>/template/admin/js/jquery-1.11.1.min.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/bootstrap.min.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/chart.min.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/chart-data.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/easypiechart.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/easypiechart-data.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/bootstrap-datepicker.js"></script>
-	<script src="<%=request.getContextPath() %>/template/admin/js/bootstrap-table.js"></script>
 	<script>
 		!function ($) {
 			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
