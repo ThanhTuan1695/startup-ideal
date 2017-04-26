@@ -1,5 +1,9 @@
 eclipse.preferences.version=1
+encoding//WebContent/contact-s2.jsp=UTF-8
+encoding//WebContent/gallery-single.jsp=UTF-8
+encoding//WebContent/gallery.jsp=UTF-8
 encoding//WebContent/index.jsp=UTF-8
+
 encoding//src/controler/ControllerAdminLogin.java=UTF-8
 encoding//src/controler/ControllerAdminLogout.java=UTF-8
 encoding//src/controler/ControllerAdminUserAddProject.java=UTF-8
