@@ -77,7 +77,7 @@
 							   }(document, 'script', 'facebook-jssdk'));
 							</script>
                                 <h3><i class="fa fa-reply"></i> Post a comment</h3>
-                                <div class="fb-comments" data-href="http://startup.com.vn" data-colorscheme="light"  data-numposts="5" data-width="750"></div>
+                                <div class="fb-comments" data-href="http://startup.com.vn?pid=<%=objProject.getIdPro() %>" data-colorscheme="light"  data-numposts="5" data-width="750"></div>
                             </div>
                         </div> <!-- end comments -->                      
                     </div> <!-- end col -->
