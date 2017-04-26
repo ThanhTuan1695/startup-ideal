@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ include file="/templates/public/inc/header.jsp" %>
+    <%@ include file="/template/public/inc/header.jsp" %>
 
 
         <!-- start page-title -->
@@ -169,4 +169,4 @@
         <!-- end full-width-project-gallery -->
 
         
-         <%@ include file="/templates/public/inc/footer.jsp" %>
+         <%@ include file="/template/public/inc/footer.jsp" %>

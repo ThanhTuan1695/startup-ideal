@@ -3,12 +3,13 @@ encoding//WebContent/contact-s2.jsp=UTF-8
 encoding//WebContent/gallery-single.jsp=UTF-8
 encoding//WebContent/gallery.jsp=UTF-8
 encoding//WebContent/index.jsp=UTF-8
-
 encoding//src/controler/ControllerAdminLogin.java=UTF-8
 encoding//src/controler/ControllerAdminLogout.java=UTF-8
 encoding//src/controler/ControllerAdminUserAddProject.java=UTF-8
 encoding//src/controler/ControllerAdminUserEditProject.java=UTF-8
 encoding//src/controler/ControllerAdminUserProfile.java=UTF-8
 encoding//src/controler/ControllerAdminUserView.java=UTF-8
+encoding//src/controler/ControllerPublicDetailProject.java=UTF-8
+encoding//src/controler/ControllerPublicIndex.java=UTF-8
 encoding//src/librarry/StringLib.java=UTF-8
 encoding/<project>=UTF-8

@@ -175,4 +175,192 @@ public class ModelProject {
 		}
 		return 0;
 	}
+	
+	public ArrayList<Project> getListNewProject() {
+		ArrayList<Project> listProject= new ArrayList<>(); 
+		conn=cDB.getConnectmysql();
+		String sql="select *,p.id_category as idcat,p.id_status as idstatus from project as p "
+				+ "inner join users as u on p.id_user = u.id_user "
+				+ "inner join category as c on p.id_category = c.id_category "
+				+ "inner join status as s on p.id_status = s.id_status "
+				+ "limit 0,6";
+		try {
+			st=conn.createStatement();
+			rs=st.executeQuery(sql);
+			while(rs.next()){
+				Project objProject= new Project(rs.getInt("id_project"), rs.getInt("id_user"), rs.getString("name_user"), 
+						rs.getString("name_project"), rs.getString("picture"), rs.getString("preview_text"),
+						rs.getString("describe"), rs.getString("time"), rs.getInt("view"), rs.getInt("idcat"), rs.getString("name_category"), 
+						rs.getInt("idstatus"), rs.getString("name_status"));
+				listProject.add(objProject);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				st.close();
+				rs.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return listProject;
+	}
+	
+	public ArrayList<Project> getListHotProject() {
+		ArrayList<Project> listProject= new ArrayList<>(); 
+		conn=cDB.getConnectmysql();
+		String sql="select *,p.id_category as idcat,p.id_status as idstatus from project as p "
+				+ "inner join users as u on p.id_user = u.id_user "
+				+ "inner join category as c on p.id_category = c.id_category "
+				+ "inner join status as s on p.id_status = s.id_status "
+				+ "order by view desc "
+				+ "limit 0,4";
+		try {
+			st=conn.createStatement();
+			rs=st.executeQuery(sql);
+			while(rs.next()){
+				Project objProject= new Project(rs.getInt("id_project"), rs.getInt("id_user"), rs.getString("name_user"), 
+						rs.getString("name_project"), rs.getString("picture"), rs.getString("preview_text"),
+						rs.getString("describe"), rs.getString("time"), rs.getInt("view"), rs.getInt("idcat"), rs.getString("name_category"), 
+						rs.getInt("idstatus"), rs.getString("name_status"));
+				listProject.add(objProject);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				st.close();
+				rs.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return listProject;
+	}
+	
+	public int countProject() {
+		int num=0;
+		conn = cDB.getConnectmysql();
+		String sql="select count(*) as sumProject from project";
+		try {
+			st=conn.createStatement();
+			rs=st.executeQuery(sql);
+			if(rs.next()){
+				num=rs.getInt("sumProject");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				st.close();
+				rs.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return num;
+	}
+	
+	public int countNewProject() {
+		int num = 0;
+		conn = cDB.getConnectmysql();
+		String sql="select count(*) as sumProject from project where datediff(time,now())=0";
+		try {
+			st=conn.createStatement();
+			rs=st.executeQuery(sql);
+			if(rs.next()){
+				num=rs.getInt("sumProject");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				st.close();
+				rs.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return num;
+	}
+	
+	public int countViews() {
+		int num = 0;
+		conn = cDB.getConnectmysql();
+		String sql="select sum(view) as sumView from project";
+		try {
+			st=conn.createStatement();
+			rs=st.executeQuery(sql);
+			if(rs.next()){
+				num=rs.getInt("sumView");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				st.close();
+				rs.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return num;
+	}
+	//Lấy list các tin cùng danh mục
+	public ArrayList<Project> getListProjectLQ(int id_cat) {
+		ArrayList<Project> listProject= new ArrayList<>(); 
+		conn=cDB.getConnectmysql();
+		String sql="select *,p.id_category as idcat,p.id_status as idstatus,p.id_user as iduser from project as p "
+				+ "inner join users as u on p.id_user = u.id_user "
+				+ "inner join category as c on p.id_category = c.id_category "
+				+ "inner join status as s on p.id_status = s.id_status "
+				+ "where p.id_category = "+id_cat
+				+ " limit 0,3";
+		try {
+			st=conn.createStatement();
+			rs=st.executeQuery(sql);
+			while(rs.next()){
+				Project objProject= new Project(rs.getInt("id_project"), rs.getInt("iduser"), rs.getString("name_user"), 
+						rs.getString("name_project"), rs.getString("picture"), rs.getString("preview_text"),
+						rs.getString("describe"), rs.getString("time"), rs.getInt("view"), rs.getInt("idcat"), rs.getString("name_category"), 
+						rs.getInt("idstatus"), rs.getString("name_status"));
+				listProject.add(objProject);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				st.close();
+				rs.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return listProject;
+	}
 }

@@ -15,29 +15,29 @@
     <title> Land care - Responsive HTML Template </title>
 
     <!-- Favicon and Touch Icons -->
-    <link href="<%=request.getContextPath()%>/templates/public/images/favicon.png" rel="shortcut icon" type="image/png">
-    <link href="<%=request.getContextPath()%>/templates/public/images/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="<%=request.getContextPath()%>/templates/public/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-    <link href="<%=request.getContextPath()%>/templates/public/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-    <link href="<%=request.getContextPath()%>/templates/public/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="<%=request.getContextPath()%>/template/public/images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="<%=request.getContextPath()%>/template/public/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<%=request.getContextPath()%>/template/public/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="<%=request.getContextPath()%>/template/public/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="<%=request.getContextPath()%>/template/public/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
 
     <!-- Icon fonts -->
-    <link href="<%=request.getContextPath()%>/templates/public/css/font-awesome.min.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/templates/public/css/flaticon.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/template/public/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/template/public/css/flaticon.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="<%=request.getContextPath()%>/templates/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/template/public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugins for this template -->
-    <link href="<%=request.getContextPath()%>/templates/public/css/animate.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/templates/public/css/owl.carousel.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/templates/public/css/owl.theme.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/templates/public/css/owl.transitions.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/templates/public/css/jquery.fancybox.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/templates/public/css/magnific-popup.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/template/public/css/animate.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/template/public/css/owl.carousel.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/template/public/css/owl.theme.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/template/public/css/owl.transitions.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/template/public/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/template/public/css/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<%=request.getContextPath()%>/templates/public/css/style.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/template/public/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -93,7 +93,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><img src="<%=request.getContextPath()%>/templates/public/images/logo.png" alt="logo" class="img img-responsive"></a>
+                        <a class="navbar-brand" href="#"><img src="<%=request.getContextPath()%>/template/public/images/logo.png" alt="logo" class="img img-responsive"></a>
                     </div>
 
                     <div id="navbar" class="navbar-collapse collapse navbar-right">

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ include file="/templates/public/inc/header.jsp" %>
+    <%@ include file="/template/public/inc/header.jsp" %>
 
 
         <!-- start page-title -->
@@ -35,7 +35,7 @@
                     <div class="col col-md-4 wow fadeInLeftSlow">
                         <div class="box">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/featured-services/img-1.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/featured-services/img-1.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <span class="icon"><i class="fi flaticon-watering-can"></i></span>
@@ -49,7 +49,7 @@
                     <div class="col col-md-4 wow fadeInLeftSlow" data-wow-delay="0.3s">
                         <div class="box">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/featured-services/img-2.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/featured-services/img-2.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <span class="icon"><i class="fi flaticon-lawn-mower"></i></span>
@@ -63,7 +63,7 @@
                     <div class="col col-md-4 wow fadeInLeftSlow" data-wow-delay="0.6s">
                         <div class="box">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/featured-services/img-3.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/featured-services/img-3.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <span class="icon"><i class="fi flaticon-fence"></i></span>
@@ -110,7 +110,7 @@
                     <div class="col col-sm-4">
                         <div class="member wow slideInUpSlow" data-wow-delay="0.3s">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/team/img-1.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/team/img-1.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <h3>Michal davidson</h3>
@@ -129,7 +129,7 @@
                     <div class="col col-sm-4">
                         <div class="member wow slideInUpSlow" data-wow-delay="0.6s">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/team/img-2.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/team/img-2.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <h3>Maria pattra</h3>
@@ -148,7 +148,7 @@
                     <div class="col col-sm-4">
                         <div class="member wow slideInUpSlow" data-wow-delay="0.9s">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/team/img-3.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/team/img-3.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <h3>Maria pattra</h3>
@@ -239,19 +239,19 @@
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="box">
-                            <a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/partner/img-1.png" alt class="img img-responsive"></a>
+                            <a href="#"><img src="<%=request.getContextPath()%>/template/public/images/partner/img-1.png" alt class="img img-responsive"></a>
                         </div>
                         <div class="box">
-                            <a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/partner/img-2.png" alt class="img img-responsive"></a>
+                            <a href="#"><img src="<%=request.getContextPath()%>/template/public/images/partner/img-2.png" alt class="img img-responsive"></a>
                         </div>
                         <div class="box">
-                            <a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/partner/img-3.png" alt class="img img-responsive"></a>
+                            <a href="#"><img src="<%=request.getContextPath()%>/template/public/images/partner/img-3.png" alt class="img img-responsive"></a>
                         </div>
                         <div class="box">
-                            <a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/partner/img-4.png" alt class="img img-responsive"></a>
+                            <a href="#"><img src="<%=request.getContextPath()%>/template/public/images/partner/img-4.png" alt class="img img-responsive"></a>
                         </div>
                         <div class="box">
-                            <a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/partner/img-5.png" alt class="img img-responsive"></a>
+                            <a href="#"><img src="<%=request.getContextPath()%>/template/public/images/partner/img-5.png" alt class="img img-responsive"></a>
                         </div>
                     </div>
                 </div> <!-- end row -->
@@ -259,4 +259,4 @@
         </section>
         <!-- end partner -->
 
-  <%@ include file="/templates/public/inc/footer.jsp" %>
+  <%@ include file="/template/public/inc/footer.jsp" %>

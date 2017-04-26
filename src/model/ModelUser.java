@@ -172,4 +172,31 @@ public class ModelUser {
 		}
 		return 0;
 	}
+	
+	public int countUser() {
+		int num = 0;
+		conn = cDB.getConnectmysql();
+		String sql="select count(*) as sumUser from users";
+		try {
+			st=conn.createStatement();
+			rs=st.executeQuery(sql);
+			if(rs.next()){
+				num=rs.getInt("sumUser");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				st.close();
+				rs.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return num;
+	}
 }

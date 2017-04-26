@@ -10,14 +10,6 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <servlet-name>Indexpubliccontroler</servlet-name>
-    <servlet-class>controler.Indexpubliccontroler</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Indexpubliccontroler</servlet-name>
-    <url-pattern>/trang-chu</url-pattern>
-  </servlet-mapping>
-  <servlet>
   	<servlet-name>ControllerAdminLogin</servlet-name>
   	<servlet-class>controler.ControllerAdminLogin</servlet-class>
   </servlet>
@@ -73,12 +65,30 @@
   	<servlet-name>ControllerAdminUserEditProject</servlet-name>
   	<url-pattern>/admin/user_editbaidang</url-pattern>
   </servlet-mapping>
-     <servlet>
+  <servlet>
   	<servlet-name>ControllerAdminUserView</servlet-name>
   	<servlet-class>controler.ControllerAdminUserView</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>ControllerAdminUserView</servlet-name>
   	<url-pattern>/admin/user_view</url-pattern>
+  </servlet-mapping>
+  <!--              Cao              -->
+  <servlet>
+  	<servlet-name>ControllerPublicIndex</servlet-name>
+  	<servlet-class>controler.ControllerPublicIndex</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ControllerPublicIndex</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <!--              Cao              -->
+  <servlet>
+  	<servlet-name>ControllerPublicDetailProject</servlet-name>
+  	<servlet-class>controler.ControllerPublicDetailProject</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ControllerPublicDetailProject</servlet-name>
+  	<url-pattern>/detail</url-pattern>
   </servlet-mapping>
 </web-app>
