@@ -91,4 +91,13 @@
   	<servlet-name>ControllerPublicDetailProject</servlet-name>
   	<url-pattern>/detail</url-pattern>
   </servlet-mapping>
+  <!--              Thinh              -->
+  <servlet>
+    <servlet-name>ControllerPublicregister</servlet-name>
+    <servlet-class>controler.ControllerPublicregister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControllerPublicregister</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
 </web-app>

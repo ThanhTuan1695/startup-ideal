@@ -19,7 +19,7 @@
         </section>
         <!-- end page-title -->
 
-        
+     			
         <!-- start featured services -->  
             <div class="container">
                 <div class="row section-title">        <section class="featured-services section-padding">
@@ -33,14 +33,16 @@
                 <div class="row content">
                    
                     <div class="col col-xs-12">
-                        <form class="form1 row" id="contact-form"  method="post">
+                        <form class="form1 row" id="contact-form"  method="post" action="<%=request.getContextPath() %>/register?send=submit">
                             <div class="col col-md-6 left-col">
-                                <input type="text" class="form-control" name="name" placeholder="your name.."><br>
-                                <input type="email" class="form-control" name="email" placeholder="your email.."><br>
-                                <input type="text" class="form-control" name="subject" placeholder="subject.."><br>
+                            	<input type="text" class="form-control" name="fullname" placeholder="fullname.."><br>
+                                <input type="text" class="form-control" name="name" placeholder="user name.."><br>
+                                <input type="password" class="form-control" name="password" placeholder="your password.."><br>
+                                                                
                             </div>
                             <div class="col col-md-6 right-col">
-                                <textarea cols="40" rows="6" class="form-control" name="message" placeholder="write here.."></textarea>
+                            	<input type="text" class="form-control" name="email" placeholder="your email.."><br>
+                                <input type="number" class="form-control" name="phone" placeholder="your phone.."><br>                                
                             </div>
                             <div class="col col-md-12">
                                 <button type="submit" class="bnt theme-btn">Send</button>
@@ -48,7 +50,17 @@
                             </div>
                             <div class="col col-md-12 submission-result">
                                 <div id="success">Thank you</div>
-                                <div id="error"> Error occurred while sending email. Please try again later. </div>
+                                <div id="error">
+                                		<%
+                                			int msg=0;
+											if(request.getParameter("msg")!=null){
+												msg=Integer.parseInt(request.getParameter("msg"));
+												if(msg==0) out.print("<span style='color:red; font-weight:bold'>Đăng ký không thành công!!</span>");
+												if(msg==1) out.print("<span style='color:red; font-weight:bold'>Username đã tồn tại!!</span>");
+												if(msg==2) out.print("<span style='color:red; font-weight:bold'>Email đã tồn tại!!</span>");
+											}
+										%>
+								</div>
                             </div> 
                         </form>
                     </div>
