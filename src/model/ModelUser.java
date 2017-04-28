@@ -199,4 +199,89 @@ public class ModelUser {
 		}
 		return num;
 	}
+	
+	public int addUser(User objUser){
+		conn=cDB.getConnectmysql();
+		String sql="insert into "+table+" values(null,?,?,?,?,?,?,?)";
+		try{
+			pst=conn.prepareStatement(sql);
+			pst.setString(1, objUser.getUserName());
+			pst.setString(2, objUser.getFullName());
+			pst.setString(3, objUser.getPassword());
+			pst.setString(4, objUser.getPhone());
+			pst.setString(5, objUser.getEmail());
+			pst.setInt(6, objUser.getIdRole());
+			pst.setString(7, objUser.getAvatar());
+			pst.executeUpdate();
+			return 1;
+		}catch(SQLException e){
+			e.printStackTrace();
+		}finally{
+			try {
+				pst.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return 0;
+		
+	}
+	
+	public int checkUsername(String username){
+		int result = 0;
+		conn = cDB.getConnectmysql();
+		String sql="SELECT * FROM "+table+" where username=?";
+		try {
+			pst=conn.prepareStatement(sql);
+			pst.setString(1	,username);
+			rs=pst.executeQuery();
+			if(rs.next()){
+				result = 1;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			try {
+				
+				rs.close();
+				pst.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return result;	
+	}
+	
+	public int checkEmail(String emails){
+		int result = 0;
+		conn = cDB.getConnectmysql();
+		String sql="SELECT * FROM "+table+" where email=?";
+		try {
+			pst=conn.prepareStatement(sql);
+			pst.setString(1	,emails);
+			rs=pst.executeQuery();
+			if(rs.next()){
+				result = 1;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			try {
+				
+				rs.close();
+				pst.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return result;	
+	}
 }
