@@ -451,46 +451,66 @@
         $("#contact-form").validate({
             rules: {
                 name: {
-                    required: true,
-                    minlength: 2
+                	required: true,
+					minlength: 5
                 },
-                email: "required",
+                email: {
+                	required: true,
+                },
                 
-                subject: {
-                    required: true
+                fullname: {
+                	required: true,
+					minlength: 5
+                },
+                phone: {
+                	required: true,
+					minlength: 9
+                },
+                password: {
+                	required: true,
+					minlength: 5
                 }
 
             },
 
             messages: {
-                name: "Please enter your name",
-                email: "Please enter your email",
-                subject: "Enter your subject"
-            },
-
-            submitHandler: function (form) {
-                $.ajax({
-                    type: "POST",
-                    url: "mail.php",
-                    data: $(form).serialize(),
-                    success: function () {
-                        $( "#loader").hide();
-                        $( "#success").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#success").slideUp( "slow" );
-                        }, 3000);
-                        form.reset();
-                    },
-                    error: function() {
-                        $( "#loader").hide();
-                        $( "#error").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#error").slideUp( "slow" );
-                        }, 3000);
-                    }
-                });
-                return false; 
+                name: {
+                	required:"<span style='color:red; font-weight:bold'>Tên đăng nhập không được bỏ trống</span>",
+                	minlength:"<span style='color:red; font-weight:bold'>Tên đăng nhập phải nhiều hơn 5 ký tự</span>"
+                },
+                email: {
+                	required:"<span style='color:red; font-weight:bold'>Email  không được bỏ trống</span>"                	
+                },
+                fullname: {
+                	required:"<span style='color:red; font-weight:bold'>Họ tên không được bỏ trống</span>",
+                	minlength:"<span style='color:red; font-weight:bold'>Họ tên phải nhiều hơn 5 ký tự</span>"
+                },
+                phone: {
+                	required:"<span style='color:red; font-weight:bold'>Số điện thoại không được bỏ trống</span>",
+                	minlength:"<span style='color:red; font-weight:bold'>So dien thoi phai nhieu hon 9 ky tu</span>"
+                },
+                password: {
+                	required:"<span style='color:red; font-weight:bold'>Password không được bỏ trống</span>",
+                	minlength:"<span style='color:red; font-weight:bold'>Password phải nhiều hơn 5 ký tự</span>"
+                }
             }
+//            ,
+//
+//            submitHandler: function (form) {
+//                $.ajax({
+//                    type: "get",
+//                    url: "C:\Users\PC\Eclipse JEE\startup-ideal\WebContent\service.jsp",
+//                    data: $(form).serialize(),
+//                    success: function () {
+//                        alert("dang ki thanh cong");
+//                        
+//                    },
+//                    error: function() {
+//                        alert("dang ki that bai");
+//                    }
+//                });
+//              
+//            }
 
         });
     }

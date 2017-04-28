@@ -18,57 +18,7 @@
             </div> <!-- end container -->
         </section>
         <!-- end page-title -->
-		<script type="text/javascript">
-		if ($("#contact-form").length) {
-	        $("#contact-form").validate({
-	            rules: {
-	                name: {
-	                	required: true,
-						minlength: 5
-	                },
-	                email: {
-	                	required: true,
-	                },
-	                
-	                fullname: {
-	                	required: true,
-						minlength: 5
-	                },
-	                phone: {
-	                	required: true,
-						minlength: 9
-	                },
-	                password: {
-	                	required: true,
-						minlength: 5
-	                }
 
-	            },
-
-	            messages: {
-	                name: {
-	                	required:"<span style='color:red; font-weight:bold'>Tên đăng nhập không được bỏ trống</span>",
-	                	minlength:"<span style='color:red; font-weight:bold'>Tên đăng nhập phải nhiều hơn 5 ký tự</span>"
-	                },
-	                email: {
-	                	required:"<span style='color:red; font-weight:bold'>Email  không được bỏ trống</span>"                	
-	                },
-	                fullname: {
-	                	required:"<span style='color:red; font-weight:bold'>Họ tên không được bỏ trống</span>",
-	                	minlength:"<span style='color:red; font-weight:bold'>Họ tên phải nhiều hơn 5 ký tự</span>"
-	                },
-	                phone: {
-	                	required:"<span style='color:red; font-weight:bold'>Số điện thoại không được bỏ trống</span>",
-	                	minlength:"<span style='color:red; font-weight:bold'>So dien thoi phai nhieu hon 9 ky tu</span>"
-	                },
-	                password: {
-	                	required:"<span style='color:red; font-weight:bold'>Password không được bỏ trống</span>",
-	                	minlength:"<span style='color:red; font-weight:bold'>Password phải nhiều hơn 5 ký tự</span>"
-	                }
-	            }
-	   });
-	    }
-		</script>
      			
         <!-- start featured services -->  
             <div class="container">
