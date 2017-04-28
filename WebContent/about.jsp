@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ include file="/templates/public/inc/header.jsp" %>
+    <%@ include file="/template/public/inc/header.jsp" %>
         <!-- start page-title -->
         <section class="page-title">
             <div class="container">
                 <div class="title">
                     <div class="icon">
-                        <img src="<%=request.getContextPath()%>/templates/public/images/page-title/icon-1.png" alt>
+                        <img src="<%=request.getContextPath()%>/template/public/images/page-title/icon-1.png" alt>
                     </div>
                     <h1>About us</h1>
                     <ol class="breadcrumb">
@@ -38,7 +38,7 @@
                                 <div class="box">
                                     <a href="#">
                                         <div class="img-holder">
-                                            <img src="<%=request.getContextPath()%>/templates/public/images/about/about-gallery/img-1.jpg" alt="" class="img img-responsive">
+                                            <img src="<%=request.getContextPath()%>/template/public/images/about/about-gallery/img-1.jpg" alt="" class="img img-responsive">
                                         </div>
                                         <div class="hover-text">
                                             <h6>Garden Care &amp; Maintenance</h6>
@@ -48,7 +48,7 @@
                                 <div class="box">
                                     <a href="#">
                                         <div class="img-holder">
-                                            <img src="<%=request.getContextPath()%>/templates/public/images/about/about-gallery/img-2.jpg" alt="" class="img img-responsive">
+                                            <img src="<%=request.getContextPath()%>/template/public/images/about/about-gallery/img-2.jpg" alt="" class="img img-responsive">
                                         </div>
                                         <div class="hover-text">
                                             <h6>Garden Care &amp; Maintenance</h6>
@@ -58,7 +58,7 @@
                                 <div class="box">
                                     <a href="#">
                                         <div class="img-holder">
-                                            <img src="<%=request.getContextPath()%>/templates/public/images/about/about-gallery/img-3.jpg" alt="" class="img img-responsive">
+                                            <img src="<%=request.getContextPath()%>/template/public/images/about/about-gallery/img-3.jpg" alt="" class="img img-responsive">
                                         </div>
                                         <div class="hover-text">
                                             <h6>Garden Care &amp; Maintenance</h6>
@@ -68,7 +68,7 @@
                                 <div class="box">
                                     <a href="#">
                                         <div class="img-holder">
-                                            <img src="<%=request.getContextPath()%>/templates/public/images/about/about-gallery/img-4.jpg" alt="" class="img img-responsive">
+                                            <img src="<%=request.getContextPath()%>/template/public/images/about/about-gallery/img-4.jpg" alt="" class="img img-responsive">
                                         </div>
                                         <div class="hover-text">
                                             <h6>Garden Care &amp; Maintenance</h6>
@@ -82,7 +82,7 @@
                     <div class="col col-md-6 about-big-photo-wrapper wow fadeInRightSlow" style="visibility: visible; animation-name: fadeInRightSlow;">
                         <h2>Land care</h2>
                         <div class="about-big-photo">
-                            <img src="<%=request.getContextPath()%>/templates/public/images/about/about-big-photo.png" alt="" class="img img-responsive">
+                            <img src="<%=request.getContextPath()%>/template/public/images/about/about-big-photo.png" alt="" class="img img-responsive">
                         </div>
                     </div>
                 </div>
@@ -91,28 +91,28 @@
                     <div class="col col-sm-3 col-xs-6">
                         <div class="box">
                             <h5>Gardening stores</h5>
-                            <img src="<%=request.getContextPath()%>/templates/public/images/funfact-icon.png" alt="" class="img img-responsive">
+                            <img src="<%=request.getContextPath()%>/template/public/images/funfact-icon.png" alt="" class="img img-responsive">
                             <h3 class="counter" data-count="44">00</h3>
                         </div>
                     </div>
                     <div class="col col-sm-3 col-xs-6">
                         <div class="box">
                             <h5>Jobs done</h5>
-                            <img src="<%=request.getContextPath()%>/templates/public/images/funfact-icon.png" alt="" class="img img-responsive">
+                            <img src="<%=request.getContextPath()%>/template/public/images/funfact-icon.png" alt="" class="img img-responsive">
                             <h3 class="counter" data-count="22">00</h3>
                         </div>
                     </div>
                     <div class="col col-sm-3 col-xs-6">
                         <div class="box">
                             <h5>Lanscape worker</h5>
-                            <img src="<%=request.getContextPath()%>/templates/public/images/funfact-icon.png" alt="" class="img img-responsive">
+                            <img src="<%=request.getContextPath()%>/template/public/images/funfact-icon.png" alt="" class="img img-responsive">
                             <h3 class="counter" data-count="205">00</h3>
                         </div>
                     </div>
                     <div class="col col-sm-3 col-xs-6">
                         <div class="box">
                             <h5>Happy client</h5>
-                            <img src="<%=request.getContextPath()%>/templates/public/images/funfact-icon.png" alt="" class="img img-responsive">
+                            <img src="<%=request.getContextPath()%>/template/public/images/funfact-icon.png" alt="" class="img img-responsive">
                             <h3 class="counter" data-count="1250">00</h3>
                         </div>
                     </div>
@@ -192,7 +192,7 @@
                     <div class="col col-md-4 wow fadeInLeftSlow">
                         <div class="box">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/featured-services/img-1.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/featured-services/img-1.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <span class="icon"><i class="fi flaticon-watering-can"></i></span>
@@ -206,7 +206,7 @@
                     <div class="col col-md-4 wow fadeInLeftSlow" data-wow-delay="0.3s">
                         <div class="box">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/featured-services/img-2.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/featured-services/img-2.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <span class="icon"><i class="fi flaticon-lawn-mower"></i></span>
@@ -220,7 +220,7 @@
                     <div class="col col-md-4 wow fadeInLeftSlow" data-wow-delay="0.6s">
                         <div class="box">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/featured-services/img-3.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/featured-services/img-3.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <span class="icon"><i class="fi flaticon-fence"></i></span>
@@ -243,10 +243,10 @@
                 <div class="row">
                     <div class="col col-sm-6 left-col">
                         <div class="top-img-holder">
-                            <img src="<%=request.getContextPath()%>/templates/public/images/cta/img-1.jpg" alt class="wow bounceInUp" data-wow-delay="0.6s">
+                            <img src="<%=request.getContextPath()%>/template/public/images/cta/img-1.jpg" alt class="wow bounceInUp" data-wow-delay="0.6s">
                         </div>
                         <div class="bottom-img-holder">
-                            <img src="<%=request.getContextPath()%>/templates/public/images/cta/img-2.jpg" alt>
+                            <img src="<%=request.getContextPath()%>/template/public/images/cta/img-2.jpg" alt>
                         </div>
                     </div>
                     <div class="col col-sm-6 right-col">
@@ -276,7 +276,7 @@
                     <div class="col col-sm-4">
                         <div class="member wow slideInUpSlow" data-wow-delay="0.3s">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/team/img-1.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/team/img-1.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <h3>Michal davidson</h3>
@@ -295,7 +295,7 @@
                     <div class="col col-sm-4">
                         <div class="member wow slideInUpSlow" data-wow-delay="0.6s">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/team/img-2.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/team/img-2.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <h3>Maria pattra</h3>
@@ -314,7 +314,7 @@
                     <div class="col col-sm-4">
                         <div class="member wow slideInUpSlow" data-wow-delay="0.9s">
                             <div class="img-holder">
-                                <img src="<%=request.getContextPath()%>/templates/public/images/team/img-3.jpg" alt class="img img-responsive">
+                                <img src="<%=request.getContextPath()%>/template/public/images/team/img-3.jpg" alt class="img img-responsive">
                             </div>
                             <div class="details">
                                 <h3>Maria pattra</h3>
@@ -343,19 +343,19 @@
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="box">
-                            <a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/partner/img-1.png" alt class="img img-responsive"></a>
+                            <a href="#"><img src="<%=request.getContextPath()%>/template/public/images/partner/img-1.png" alt class="img img-responsive"></a>
                         </div>
                         <div class="box">
-                            <a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/partner/img-2.png" alt class="img img-responsive"></a>
+                            <a href="#"><img src="<%=request.getContextPath()%>/template/public/images/partner/img-2.png" alt class="img img-responsive"></a>
                         </div>
                         <div class="box">
-                            <a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/partner/img-3.png" alt class="img img-responsive"></a>
+                            <a href="#"><img src="<%=request.getContextPath()%>/template/public/images/partner/img-3.png" alt class="img img-responsive"></a>
                         </div>
                         <div class="box">
-                            <a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/partner/img-4.png" alt class="img img-responsive"></a>
+                            <a href="#"><img src="<%=request.getContextPath()%>/template/public/images/partner/img-4.png" alt class="img img-responsive"></a>
                         </div>
                         <div class="box">
-                            <a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/partner/img-5.png" alt class="img img-responsive"></a>
+                            <a href="#"><img src="<%=request.getContextPath()%>/template/public/images/partner/img-5.png" alt class="img img-responsive"></a>
                         </div>
                     </div>
                 </div> <!-- end row -->
@@ -363,4 +363,4 @@
         </section>
         <!-- end partner -->
 
-  <%@ include file="/templates/public/inc/footer.jsp" %>
+  <%@ include file="/template/public/inc/footer.jsp" %>

@@ -38,12 +38,12 @@
                         <div class="widget flicker-widget">
                             <h3>Flicker</h3>
                             <ul>
-                                <li><a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/footer-flicker/img-1.jpg" alt class="img img-responsive"></a></li>
-                                <li><a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/footer-flicker/img-2.jpg" alt class="img img-responsive"></a></li>
-                                <li><a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/footer-flicker/img-3.jpg" alt class="img img-responsive"></a></li>
-                                <li><a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/footer-flicker/img-4.jpg" alt class="img img-responsive"></a></li>
-                                <li><a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/footer-flicker/img-5.jpg" alt class="img img-responsive"></a></li>
-                                <li><a href="#"><img src="<%=request.getContextPath()%>/templates/public/images/footer-flicker/img-6.jpg" alt class="img img-responsive"></a></li>
+                                <li><a href="#"><img src="<%=request.getContextPath()%>/template/public/images/footer-flicker/img-1.jpg" alt class="img img-responsive"></a></li>
+                                <li><a href="#"><img src="<%=request.getContextPath()%>/template/public/images/footer-flicker/img-2.jpg" alt class="img img-responsive"></a></li>
+                                <li><a href="#"><img src="<%=request.getContextPath()%>/template/public/images/footer-flicker/img-3.jpg" alt class="img img-responsive"></a></li>
+                                <li><a href="#"><img src="<%=request.getContextPath()%>/template/public/images/footer-flicker/img-4.jpg" alt class="img img-responsive"></a></li>
+                                <li><a href="#"><img src="<%=request.getContextPath()%>/template/public/images/footer-flicker/img-5.jpg" alt class="img img-responsive"></a></li>
+                                <li><a href="#"><img src="<%=request.getContextPath()%>/template/public/images/footer-flicker/img-6.jpg" alt class="img img-responsive"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -62,14 +62,14 @@
 
     <!-- All JavaScript files
     ================================================== -->
-    <script src="<%=request.getContextPath()%>/templates/public/js/jquery.min.js"></script>
-    <script src="<%=request.getContextPath()%>/templates/public/js/bootstrap.min.js"></script>
+    <script src="<%=request.getContextPath()%>/template/public/js/jquery.min.js"></script>
+    <script src="<%=request.getContextPath()%>/template/public/js/bootstrap.min.js"></script>
 
     <!-- Plugins for this template -->
-    <script src="<%=request.getContextPath()%>/templates/public/js/jquery-plugin-collection.js"></script>
+    <script src="<%=request.getContextPath()%>/template/public/js/jquery-plugin-collection.js"></script>
 
     <!-- Custom script for this template -->
-    <script src="<%=request.getContextPath()%>/templates/public/js/script.js"></script>
+    <script src="<%=request.getContextPath()%>/template/public/js/script.js"></script>
 </body>
 
 <!-- Mirrored from themeinnovation.com/demo/html/land-care/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Mar 2017 08:37:20 GMT -->

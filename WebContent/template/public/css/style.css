@@ -176,7 +176,7 @@ a:focus {
   margin: 0; }
 
 .section-padding {
-  padding: 70px 0; }
+  padding: 20px 0; }
   @media (max-width: 767px) {
     .section-padding {
       padding: 60px 0; } }
@@ -599,7 +599,7 @@ a:focus {
       margin-right: 0; }
 
 .page-title {
-  background: url("../images/page-title/about-pg-title.jpg") center center/cover no-repeat local;
+  background: url("../images/page-title/banner.jpg") center center/cover no-repeat local;
   height: 300px;
   text-align: center;
   position: relative; }
