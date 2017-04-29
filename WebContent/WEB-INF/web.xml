@@ -203,6 +203,7 @@
   	<servlet-name>EditPasswordUserAdminController</servlet-name>
   	<url-pattern>/admin/edit_pass_user</url-pattern>
   </servlet-mapping>
+  
   <servlet>
   	<servlet-name>DelUserAdminController</servlet-name>
   	<servlet-class>controler.DelUserAdminController</servlet-class>
