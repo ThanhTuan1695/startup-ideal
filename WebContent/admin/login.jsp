@@ -65,5 +65,5 @@
 					</form>
 				</div>
 			</div>
-		</div>
+		</div><!-- /.col-->
 <%@ include file ="/template/admin/inc/footer.jsp" %>
