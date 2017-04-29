@@ -6,7 +6,7 @@
 			<div class="navbar-header">
 				<p class="navbar-brand">Admin</p>
 			</div>							
-		</div><!-- /.container-fluid -->
+		</div>
 	</nav>
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
