@@ -67,12 +67,13 @@
 								</div>		
 								<div class="form-group" style="padding-left: 280px">
 									<button type="submit" class="btn btn-primary">Thêm</button>
-								</div>								
+								</div>	
+						</div>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>	
+		
 	
 <%@ include file ="/template/admin/inc/footer.jsp" %>
