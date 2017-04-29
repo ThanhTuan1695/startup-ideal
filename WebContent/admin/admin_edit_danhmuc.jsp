@@ -5,7 +5,7 @@
 			<div class="col-lg-12">
 				<h1 class="page-header" align="center">Sửa danh mục</h1>
 			</div>
-		</div>
+		</div><!--/.row-->
 						
 		<div class="row">
 			<div class="col-lg-12">
@@ -31,6 +31,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+			</div><!--/.col-->
+		</div><!--/.row-->
 <%@ include file ="/template/admin/inc/footer.jsp" %>
