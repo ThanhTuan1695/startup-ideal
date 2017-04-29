@@ -75,6 +75,5 @@
 					</div>
 				</div>
 			</div>
-		
 	
 <%@ include file ="/template/admin/inc/footer.jsp" %>
