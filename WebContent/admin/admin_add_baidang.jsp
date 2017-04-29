@@ -73,7 +73,7 @@
 							</form>
 						</div>
 					</div>
-				</div>
-			</div>
+				</div><!-- /.col-->
+			</div><!-- /.row-->
 	
 <%@ include file ="/template/admin/inc/footer.jsp" %>
