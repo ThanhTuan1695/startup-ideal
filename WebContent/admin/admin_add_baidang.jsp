@@ -26,6 +26,7 @@
 													
 								<div class="form-group">
 									<label style="width:100px">Tiêu đề</label>
+									
 									<input class="form-control" name= "namepro" placeholder="Tiêu đề" value = ""/>
 								</div>
 																
