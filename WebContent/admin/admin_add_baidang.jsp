@@ -64,7 +64,7 @@
 								</div>
 								<div class="form-group">
 									<label style="width:100px">Chi tiết</label>
-									<textarea class="form-control" name = "detail" rows="6"></textarea>
+									<textarea class="form-control" name = "detail" rows="6"> </textarea>
 								</div>		
 								<div class="form-group" style="padding-left: 280px">
 									<button type="submit" class="btn btn-primary">Thêm</button>
