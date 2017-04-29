@@ -5,7 +5,9 @@ body {
 	padding-top: 0px;
 	color: #5f6468;
 }
-
+.error{
+	color:red;
+}
 input[type="file"] {
     display: none;
 }

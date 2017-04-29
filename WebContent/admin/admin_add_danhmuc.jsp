@@ -14,10 +14,10 @@
 								
 						</div>
 						<div class="col-md-6" style="width:850px">
-							<form role="form">							
+							<form role="form" action="<%=request.getContextPath() %>/admin/add_cat" method="post">							
 								<div class="form-group">
 									<label style="width:150px">Tên danh mục</label>
-									<input class="form-control" style="width:400px" placeholder="Tên danh mục">
+									<input class="form-control" style="width:400px" name = "nameCat" value = "" placeholder="Tên danh mục">
 								</div>	
 								<div class="form-group" style="padding-left: 280px">
 									<button type="submit" class="btn btn-primary">Thêm</button>
