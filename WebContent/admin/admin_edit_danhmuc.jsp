@@ -21,7 +21,7 @@
 							<form role="form" action="<%=request.getContextPath() %>/admin/edit_cat?cid=<%=objCat.getId_cat() %>" method="post">												
 								<div class="form-group">
 									<label style="width:100px">Tên danh mục</label>
-									<input class="form-control" name="nameCat" value="<%=objCat.getName_cat() %>"  style="width:400px" placeholder="Tên danh mục">
+									<input class="form-control" name="nameCat" value="<%=objCat.getName_cat()%>"  style="width:400px" placeholder="Tên danh mục">
 								</div>
 								<div class="form-group" style="padding-left: 280px">
 									<button type="submit" class="btn btn-primary">Sửa</button>
